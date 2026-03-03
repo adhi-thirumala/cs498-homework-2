@@ -1,8 +1,8 @@
 import requests
 import uuid
 
-US_CENTRAL_URL = "http://34.56.172.18"
-EUROPE_WEST_URL = "http://35.205.163.0"
+US_CENTRAL_URL = "http://34.58.199.16:8080"
+EUROPE_WEST_URL = "http://35.205.163.0:8080"
 
 
 REGISTER_ENDPOINT = "/register"

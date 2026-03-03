@@ -1,0 +1,14 @@
+AVERAGE LATENCIES
+US-CENTRAL /register: 0.4843 seconds
+EUROPE-WEST /register: 0.9433 seconds
+US-CENTRAL /list: 0.1191 seconds
+EUROPE-WEST /list: 0.8905 seconds
+
+
+EVENTUAL CONSISTENCY RESULTS
+Total iterations: 100
+Username NOT found immediately: 0
+Percentage of replication lag occurrences: 0.00%
+
+
+The latencies differ since I am further away from the Europe instance. The speed of light inherently limits my ability to connect to the further instance and run queries on it. Furthermore, the Europe instance is further away from the Datastore which adds another hop of latency. The consistency experiment shows that while the Datastore is eventually consistent, we're sending small enough data packets and the lag isnt enough to trigger inconsistency.
