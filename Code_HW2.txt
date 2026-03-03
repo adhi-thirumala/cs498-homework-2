@@ -1,0 +1,1 @@
+The implementation of my scripts used to measure latency is uncomplicated. I used the python requests library to make requests to the APIs that I had exposed publicly. It followed the given API contract.
