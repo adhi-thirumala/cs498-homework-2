@@ -35,7 +35,6 @@ app.post("/clear", async (req, res) => {
     if (keys.length > 0) {
         await datastore.delete(keys);
     }
-    console.log(cleared);
     res.status(200).json({ message: "Cleared" });
 });
 
