@@ -23,6 +23,8 @@ app.get("/list", async (req, res) => {
     const query = datastore.createQuery("User");
     const [users] = await datastore.runQuery(query);
     const usernames = users.map((user) => user.username);
+    console.log("got usernames");
+    console.log(usernames);
     res.json({ users: usernames });
 });
 
@@ -33,6 +35,7 @@ app.post("/clear", async (req, res) => {
     if (keys.length > 0) {
         await datastore.delete(keys);
     }
+    console.log(cleared);
     res.status(200).json({ message: "Cleared" });
 });
 
